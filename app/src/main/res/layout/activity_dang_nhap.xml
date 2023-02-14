@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/bglogin"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.DangNhapActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarlogin"
+        android:background="#3300FF"
+        app:titleTextColor="#ffffff"
+        app:title="Đăng Nhập"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@drawable/boder"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="80dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:src="@drawable/loginavatar"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:contentDescription="@string/todo10" />
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:textStyle="bold"
+            android:textColor="#0a0a0a"
+            android:textSize="30sp"
+            android:text="@string/ng_nh_ptxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_marginTop="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:layout_margin="5dp"
+                android:id="@+id/edittexttaikhoan"
+                android:inputType="text"
+                android:hint="@string/nh_p_t_n_t_i_kho_n"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:importantForAutofill="no" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:layout_margin="5dp"
+                android:id="@+id/edittextmatkhau"
+                android:inputType="textPassword"
+                android:hint="@string/nh_p_m_t_kh_u"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:importantForAutofill="no" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <Button
+            android:textSize="10sp"
+            android:id="@+id/buttondangky"
+            android:layout_marginTop="10dp"
+            android:text="@string/ng_k_"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="?android:attr/buttonBarButtonStyle" />
+        <LinearLayout
+            android:gravity="center"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:layout_marginEnd="70dp"
+                android:textSize="15sp"
+                android:padding="10dp"
+                android:id="@+id/buttonlogin"
+                android:text="@string/ng_nh_p"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="?android:attr/buttonBarButtonStyle" />
+            <Button
+                android:textSize="15sp"
+                android:padding="10dp"
+                android:id="@+id/buttongohome"
+                android:text="@string/tr_v"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="?android:attr/buttonBarButtonStyle" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

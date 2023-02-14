@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarthongtin"
+        android:background="#64b354"
+        app:titleTextColor="#f1edec"
+        app:title="Thông Tin"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+    </androidx.appcompat.widget.Toolbar>
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:background="@drawable/thongtinbg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:textColor="#ffffff"
+            android:text="@string/th_ng_tin_v_ch_ng_t_i"
+            android:textSize="30sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:background="@drawable/boder"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_margin="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:src="@drawable/address"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:contentDescription="@string/todo8" />
+            <TextView
+                android:gravity="center"
+                android:layout_margin="30dp"
+                android:textSize="20sp"
+                android:textColor="#000000"
+                android:text="@string/adress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:background="@drawable/boder"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_margin="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <fragment xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/map"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context=".Activity.ThongTinActivity" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

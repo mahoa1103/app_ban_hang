@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.TimKiemActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbartimkiem"
+        android:background="#0000FF"
+        app:titleTextColor="#ffffff"
+        app:title="Tìm Kiếm"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+    </androidx.appcompat.widget.Toolbar>
+    <LinearLayout
+        android:weightSum="5"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/edittexttimkiem"
+            android:layout_marginTop="5dp"
+            android:hint="@string/nh_p_t_kh_a"
+            android:textSize="15sp"
+            android:layout_margin="5dp"
+            android:inputType="text"
+            android:layout_weight="4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:importantForAutofill="no" />
+        <ImageButton
+            android:id="@+id/buttontimkiem"
+            android:src="@drawable/search"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:contentDescription="@string/todo9" />
+    </LinearLayout>
+    <ListView
+        android:id="@+id/listviewtimkiem"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>
